@@ -17,12 +17,16 @@ public class Main {
 
 
 
-        Cliente cliente = new Cliente("Lohran", "Cintra");
-        Hamburguer hamburguer = new Hamburguer(ingredienteList);
 
-        Pedido pedido1 = new Pedido(cliente, hamburguer);
+        Hamburguer hamburguer = new Hamburguer(ingredienteList,19);
 
-        System.out.println(hamburguer.getIngredientes());
+
+
+        System.out.println("Antes de tirar " + hamburguer.getIngredientes());
+
+         hamburguer.tirarIngredientes("jiló");
+
+        System.out.println("Depois de tirar " + hamburguer.getIngredientes());
     }
 }
 
